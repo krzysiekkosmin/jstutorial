@@ -1,0 +1,33 @@
+deklaracja zmiennej
+    stała - const nazwa zmiennej = wartość
+    zmienna - let/var nazwa zmiennej = wartość
+
+typy zmiennych
+    let a = 4 - zmienna numerowa
+    let b = "jakiś tekst" - zmienna typu string
+    let c = 'jakiś tekst' - zmienna typu string
+
+    let d = true - zmienna typu boolean, czyli typu logicznego
+    let e = null - wartość typu null
+
+sprawdzanie typu zmiennej  
+    console.log(typeof(a)) - w przeglądarce prawy klawisz, zbadaj i zakładka consola
+
+wprowadzanie wartości poprzez okno dialogowe
+    
+    
+    let a = parseInt(prompt('podaj liczbę'))
+    let b = parseInt(prompt('podaj liczbę'))
+
+    suma = a+b
+    console.log("suma podanych liczb wynosi" + suma)
+
+w pętli while
+
+    while (suma >= 0){
+        let a = parseInt(prompt('podaj pierwszą liczbę'))
+        let b = parseInt(prompt('podaj drugą liczbę'))
+
+        suma = a+b
+        console.log("suma podanych liczb wynosi" + suma)
+    }
