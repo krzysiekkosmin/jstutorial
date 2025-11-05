@@ -127,25 +127,23 @@ tablicaModyfikacjaCeny()
 function test(){
     const person = [
     {
-  name: "John",
-  age: 30,
-  city: "New York"
-},
-{
-    name: "Janek",
-    age: 23,
-    city: "Warsaw"
-}
+        name: "John",
+        age: 30,
+        city: "New York"
+    },
+    {
+        name: "Janek",
+        age: 23,
+        city: "Warsaw"
+    }
     ];
 
-// Build a Text
-let text = "";
-for (let x = 0; x < person.length; x++) {
-  document.getElementById('tab07').innerHTML = (`Imię: ${person[x].name}, Wiek: ${person[x].age}`);
+    // Build a Text
+    let text = "";
+    for (let x = 0; x < person.length; x++) {
+        document.getElementById('tab07').innerHTML = (`Imię: ${person[x].name}, Wiek: ${person[x].age}`);
 
 };
 
-// Display the Text
-document.getElementById("demo").innerHTML = text;
 }
 test();
