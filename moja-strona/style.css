@@ -1,0 +1,596 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0.5rem 1rem;
+    width: auto;
+    height: 70px;
+}
+
+.logo > h1{
+    color: black;
+    font-size: 60px;
+    margin-top: 0;
+}
+
+.logo > p{
+    font-size: 30px;
+    color: black;
+    margin-top: -60px;
+
+}
+
+.container{
+    background-size: cover;
+    background-image: url("./images/vecteezy_construction-site-in-thailand_27940398.jpg");
+    width: auto;
+    height: 650px;
+}
+
+nav{
+    margin-top: 20px;
+    display: inline;
+}
+
+nav li{
+    margin: 70px;
+    display: inline;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    color: dimgrey;
+}
+
+.site{
+    width: 1300px;
+    height: 500px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: block;
+}
+
+.site-up{
+    display: flex;    
+}
+
+.site-up-ul1{
+    width: 260px;
+    height: 240px;
+    margin-top: 10px;
+}
+
+.ul-up-1{
+    width: 200px;
+    height: 200px;
+    margin-left: 10px;
+}
+
+.li-up-1{
+    position: absolute;
+    background-image: url(./images/construction.png);
+    background-repeat: no-repeat;
+    background-size: 150px 120px;
+    margin-top: 10px;
+    margin-left: -25px;
+    width: 210px;
+    height: 180px;
+    background-color: rgba(0, 0, 0, 0.45);
+    transition: width 0.5s, height 0.5s, background-color 0.5s;
+    list-style: none;
+    border-radius: 6%;
+    box-shadow: 5px 10px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+.li-up-1:hover{
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.li-up-1:active{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.li-up-1 a{
+    position: absolute;
+    display: block;
+    width: 210px;
+    height: 180px;
+    text-decoration: none;
+    color: white;
+}
+
+.li-up-1 p{
+    position: relative;
+    margin-top: 130px;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.site-up-ul2{
+    width: 260px;
+    height: 240px;
+    margin-top: 10px;
+}
+
+.ul-up-2{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    margin-left: 10px;
+}
+
+.li-up-2{
+    position: absolute;
+    background-image: url(./images/design.png);
+    background-repeat: no-repeat;
+    background-size: 150px 120px;
+    margin-top: 10px;
+    margin-left: -25px;
+    width: 210px;
+    height: 180px;
+    background-color: rgba(0, 0, 0, 0.45);
+    transition: width 0.5s, height 0.5s, background-color 0.5s;
+    border-radius: 6%;
+    box-shadow: 5px 10px 15px -5px rgba(0, 0, 0, 0.3);
+    list-style: none;
+}
+
+.li-up-2:hover{
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.li-up-2:active{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.li-up-2 a{
+    position: absolute;
+    display: block;
+    width: 210px;
+    height: 180px;
+    text-decoration: none;
+    color: white;
+}
+
+.li-up-2 p{
+    position: relative;
+    margin-top: 130px;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.site-up-ul3{
+    width: 260px;
+    height: 240px;
+    margin-top: 10px;
+}
+
+.ul-up-3{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    margin-left: 10px;
+}
+
+.li-up-3{
+    position: absolute;
+    background-image: url(./images/excavator.png);
+    background-repeat: no-repeat;
+    background-size: 150px 120px;
+    margin-top: 10px;
+    margin-left: -25px;
+    width: 210px;
+    height: 180px;
+    background-color: rgba(0, 0, 0, 0.45);
+    transition: width 0.5s, height 0.5s, background-color 0.5s;
+    list-style: none;
+    box-shadow: 5px 10px 15px -5px rgba(0, 0, 0, 0.3);
+    border-radius: 6%;
+}
+
+.li-up-3:hover{
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.li-up-3:active{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.li-up-3 a{
+    position: absolute;
+    display: block;
+    width: 210px;
+    height: 180px;
+    text-decoration: none;
+    color: white;
+}
+
+.li-up-3 p{
+    position: relative;
+    margin-top: 130px;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.site-up-ul4{
+    width: 260px;
+    height: 240px;
+    margin-top: 10px;
+}
+
+.ul-up-4{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    margin-left: 10px;
+}
+
+.li-up-4{
+    position: absolute;
+    background-image: url(./images/workers.png);
+    background-repeat: no-repeat;
+    background-size: 150px 120px;
+    margin-top: 10px;
+    margin-left: -25px;
+    width: 210px;
+    height: 180px;
+    background-color: rgba(0, 0, 0, 0.45);
+    transition: width 0.5s, height 0.5s, background-color 0.5s;
+    border-radius: 6%;
+    box-shadow: 5px 10px 15px -5px rgba(0, 0, 0, 0.3);
+    list-style: none;
+}
+
+.li-up-4:hover{
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.li-up-4:active{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.li-up-4 a{
+    position: absolute;
+    display: block;
+    width: 210px;
+    height: 180px;
+    text-decoration: none;
+    color: white;
+}
+
+.li-up-4 p{
+    position: relative;
+    margin-top: 130px;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.site-up-ul5{
+    width: 260px;
+    height: 240px;
+    margin-top: 10px;
+}
+
+.ul-up-5{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    margin-left: 10px;
+}
+
+.li-up-5{
+    position: absolute;
+    background-image: url(./images/work-in-progress.png);
+    background-repeat: no-repeat;
+    background-size: 150px 120px;
+    margin-top: 10px;
+    margin-left: -25px;
+    width: 210px;
+    height: 180px;
+    background-color: rgba(0, 0, 0, 0.45);
+    transition: width 0.5s, height 0.5s, background-color 0.5s;
+    border-radius: 6%;
+    box-shadow: 5px 10px 15px -5px rgba(0, 0, 0, 0.3);
+    list-style: none;
+}
+
+.li-up-5:hover{
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.li-up-5:active{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.li-up-5 a{
+    position: absolute;
+    display: block;
+    width: 210px;
+    height: 180px;
+    text-decoration: none;
+    color: white;
+}
+
+.li-up-5 p{
+    position: relative;
+    margin-top: 130px;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.site-down{
+    display: flex;
+}
+
+.site-down-ul1{
+    width: 260px;
+    height: 240px;
+}
+
+.ul-down-1{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    margin-left: 10px;
+}
+
+.li-down-1{
+    position: absolute;
+    background-image: url(./images/tool-box.png);
+    background-repeat: no-repeat;
+    background-size: 150px 120px;
+    margin-top: 10px;
+    margin-left: -25px;
+    width: 210px;
+    height: 180px;
+    background-color: rgba(0, 0, 0, 0.45);
+    transition: width 0.5s, height 0.5s, background-color 0.5s;
+    border-radius: 6%;
+    box-shadow: 5px 10px 15px -5px rgba(0, 0, 0, 0.3);
+    list-style: none;
+}
+
+.li-down-1:hover{
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.li-down-1:active{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.li-down-1 a{
+    position: absolute;
+    display: block;
+    width: 210px;
+    height: 180px;
+    text-decoration: none;
+    color: white;
+}
+
+.li-down-1 p{
+    position: relative;
+    margin-top: 130px;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.site-down-ul2{
+    width: 260px;
+    height: 240px;
+}
+
+.ul-down-2{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    margin-left: 10px;
+}
+
+.li-down-2{
+    position: absolute;
+    background-image: url(./images/helmet.png);
+    background-repeat: no-repeat;
+    background-size: 150px 120px;
+    margin-top: 10px;
+    margin-left: -25px;
+    position: relative;
+    width: 210px;
+    height: 180px;
+    background-color: rgba(0, 0, 0, 0.45);
+    transition: width 0.5s, height 0.5s, background-color 0.5s;
+    border-radius: 6%;
+    box-shadow: 5px 10px 15px -5px rgba(0, 0, 0, 0.3);
+    list-style: none;
+}
+
+.li-down-2:hover{
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.li-down-2:active{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.li-down-2 a{
+    position: absolute;
+    display: block;
+    width: 210px;
+    height: 180px;
+    text-decoration: none;
+    color: white;
+}
+
+.li-down-2 p{
+    position: relative;
+    margin-top: 130px;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.site-down-ul3{
+    width: 260px;
+    height: 240px;
+}
+
+.ul-down-3{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    margin-left: 10px;
+}
+
+.li-down-3{
+    position: absolute;
+    background-image: url(./images/technology.png);
+    background-repeat: no-repeat;
+    background-size: 150px 120px;
+    margin-top: 10px;
+    margin-left: -25px;
+    width: 210px;
+    height: 180px;
+    background-color: rgba(0, 0, 0, 0.45);
+    transition: width 0.5s, height 0.5s, background-color 0.5s;
+    border-radius: 6%;
+    box-shadow: 5px 10px 15px -5px rgba(0, 0, 0, 0.3);
+    list-style: none;
+}
+
+.li-down-3:hover{
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.li-down-3:active{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.li-down-3 a{
+    position: absolute;
+    display: block;
+    width: 210px;
+    height: 180px;
+    text-decoration: none;
+    color: white;
+}
+
+.li-down-3 p{
+    position: relative;
+    margin-top: 130px;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.site-down-ul4{
+    width: 260px;
+    height: 240px;
+}
+
+.ul-down-4{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    margin-left: 10px;
+}
+
+.li-down-4{
+    position: absolute;
+    background-image: url(./images/cement-truck.png);
+    background-repeat: no-repeat;
+    background-size: 150px 120px;
+    margin-top: 10px;
+    margin-left: -25px;
+    width: 210px;
+    height: 180px;
+    background-color: rgba(0, 0, 0, 0.45);
+    transition: width 0.5s, height 0.5s, background-color 0.5s;
+    border-radius: 6%;
+    box-shadow: 5px 10px 15px -5px rgba(0, 0, 0, 0.3);
+    list-style: none;
+}
+
+.li-down-4:hover{
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.li-down-4:active{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.li-down-4 a{
+    position: absolute;
+    display: block;
+    width: 210px;
+    height: 180px;
+    text-decoration: none;
+    color: white;
+}
+
+.li-down-4 p{
+    position: relative;
+    margin-top: 130px;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.site-down-ul5{
+    width: 260px;
+    height: 240px;
+}
+
+.ul-down-5{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    margin-left: 10px;
+}
+
+.li-down-5{
+    position: absolute;
+    background-image: url(./images/engineer.png);
+    background-repeat: no-repeat;
+    background-size: 150px 120px;
+    margin-top: 10px;
+    margin-left: -25px;
+    width: 210px;
+    height: 180px;
+    background-color: rgba(0, 0, 0, 0.45);
+    border-radius: 6%;
+    transition: width 0.5s, height 0.5s, background-color 0.5s;
+    list-style: none;
+}
+
+.li-down-5:hover{
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.li-down-5:active{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.li-down-5 a{
+    position: absolute;
+    display: block;
+    width: 210px;
+    height: 180px;
+    text-decoration: none;
+    color: white;
+}
+
+.li-down-5 p{
+    position: relative;
+    margin-top: 130px;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
