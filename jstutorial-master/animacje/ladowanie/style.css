@@ -1,0 +1,90 @@
+body{
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1350px;
+    height: 900px;
+    border: 1px solid grey;
+}
+
+.header{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    position: flex;
+    width: 1320px;
+    height: 150px;
+    border: none /*1px solid grey*/;
+}
+
+nav{
+    margin-left: -70px;
+    margin-right: -120px;
+    margin-top: 20px;
+    margin-bottom: -60px;
+}
+
+nav li{
+    display: inline;
+    margin: 45px;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+    transition: all 1s ease;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+hr.menu{
+    border: none;
+    height: 2px;
+    background-color: #3b3b3b;
+    box-shadow: 0 1px 0 #525252;
+    margin-top: 80px;
+    border: none;
+}
+
+.preloader {
+	margin: 80px auto 0;
+	font-size: 70px;
+	width: 1em;
+	height: 1em;
+	border-radius: 50%;
+	animation: animation 1.7s infinite ease;
+}
+
+@keyframes animation {
+	0% {
+		transform: rotate(0deg);
+		box-shadow: 0 -0.83em 0 -0.4em #F34A53, 0 -0.83em 0 -0.42em #F34A53, 0 -0.83em 0 -0.44em #F34A53, 0 -0.83em 0 -0.46em #F34A53, 0 -0.83em 0 -0.477em #F34A53;
+	}
+	5%,
+	95% {
+		box-shadow: 0 -0.83em 0 -0.4em #F34A53, 0 -0.83em 0 -0.42em #F34A53, 0 -0.83em 0 -0.44em #F34A53, 0 -0.83em 0 -0.46em #F34A53, 0 -0.83em 0 -0.477em #F34A53;
+	}
+	10%,
+	59% {
+		box-shadow: 0 -0.83em 0 -0.4em #F34A53, -0.087em -0.825em 0 -0.42em #F34A53, -0.173em -0.812em 0 -0.44em #F34A53, -0.256em -0.789em 0 -0.46em #F34A53, -0.297em -0.775em 0 -0.477em #F34A53;
+	}
+	20% {
+		box-shadow: 0 -0.83em 0 -0.4em #F34A53, -0.338em -0.758em 0 -0.42em #F34A53, -0.555em -0.617em 0 -0.44em #F34A53, -0.671em -0.488em 0 -0.46em #F34A53, -0.749em -0.34em 0 -0.477em #F34A53;
+	}
+	38% {
+		box-shadow: 0 -0.83em 0 -0.4em #F34A53, -0.377em -0.74em 0 -0.42em #F34A53, -0.645em -0.522em 0 -0.44em #F34A53, -0.775em -0.297em 0 -0.46em #F34A53, -0.82em -0.09em 0 -0.477em #F34A53;
+	}
+	100% {
+		transform: rotate(360deg);
+		box-shadow: 0 -0.83em 0 -0.4em #F34A53, 0 -0.83em 0 -0.42em #F34A53, 0 -0.83em 0 -0.44em #F34A53, 0 -0.83em 0 -0.46em #F34A53, 0 -0.83em 0 -0.477em #F34A53;
+	}
+}

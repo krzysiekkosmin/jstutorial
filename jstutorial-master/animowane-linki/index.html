@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Animowane Linki</title>
+</head>
+<body>
+    
+    <div class="container">
+        
+        <!-- sekcja HEADER -->
+        <div class="header">
+
+            <nav>
+
+             <!-- LOGO -->   
+            <h1 class="logo">K&K</h1>
+            <select id="selected" onchange="select()">
+                <option selected id="ki" value="ki">Klient Indywidualny</option>
+                <option id="f" value="f">Firmy</option>
+                <option id="dfi" value="dfi">Duże Firmy i Instytucje</option>
+            </select>
+            
+                <ul class="ul-menu">
+                    <li><div class="btn-12" onclick="home()">
+                        HOME
+                    </div></li>
+                    <li><div class="btn-12">
+                        O nas
+                    </div></li>
+                    <li><div class="btn-12">
+                        Serwis
+                    </div></li>
+                    <li><div class="btn-12">
+                        Kontakt
+                    </div></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- klient indywidualny -->
+        <div id="home">
+            <p>Home</p>
+        </div>
+        
+        <div id="firma">
+            <p>Firma</p>
+        </div>
+
+        <div id="firma-i-instytucje">
+            <p>Duże Firmy i Instytucje</p>
+        </div>
+
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

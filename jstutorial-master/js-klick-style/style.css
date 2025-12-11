@@ -1,0 +1,99 @@
+body{
+    background-color: #FFFFCC;
+    margin: 0;
+    padding: 0;
+}
+    
+/*
+jasny
+body   #FFFFCC
+container #3691f7
+header #0066FF
+center #00FF00
+footer #FF66CC
+
+
+
+ciemny
+body #193870
+container #000066
+header #301379
+center #003300
+footer #660066
+*/
+
+.container{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1350px;
+    height: 900px;
+    background-color: #3691f7;
+    border: 2px solid #333;
+    justify-content: center;
+    box-shadow:5px 5px 10px rgb(0, 0, 0, 0.3);
+}
+
+.header{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    position: flex;
+    width: 1250px;
+    height: 150px;
+    background-color: #0066FF;
+    border: 2px solid #fff;
+    box-shadow:5px 5px 10px rgb(0, 0, 0, 0.3);
+}
+
+.center{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    position: flex;
+    width: 1250px;
+    height: 600px;
+    background-color: #00FF00;
+    border: 2px solid #fff;
+    box-shadow:5px 5px 10px rgb(0, 0, 0, 0.3);
+}
+
+.footer{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    position: flex;
+    width: 1250px;
+    height: 100px;
+    background-color: #FF66CC;
+    border: 2px solid #fff;
+    box-shadow:5px 5px 10px rgb(0, 0, 0, 0.3);
+}
+
+.btn-ciemny{
+    background-color: #00FF00;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow:5px 5px 10px rgb(0, 0, 0, 0.3);
+}
+
+.btn-jasny{
+    background-color: #FF66FF;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow:5px 5px 10px rgb(0, 0, 0, 0.3);
+}
