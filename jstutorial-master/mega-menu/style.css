@@ -70,7 +70,7 @@ nav .menu__list li .main__link{
 }
 
 nav .dropdown{
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     padding: 10px;
@@ -80,8 +80,90 @@ nav .dropdown{
     left: 0;
     width: 100vw;
     height: 450px;
+    opacity: 0;
+}
+
+nav ul li:hover .dropdown{
+    display: flex;
+    animation: showDropdown;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes showDropdown{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.dropdown .submenu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 80%;
+    width: 200px;
+    padding: 1rem;
+}
+
+.submenu h5{
+    color: var(--green);
+}
+
+.submenu .menu__link{
+    text-decoration: none;
+    color: var(--dark);
+    margin: 10px 0;
+}
+
+.submenu .red__link{
+    text-decoration: none;
+    color: var(--red);
+}
+
+.submenu p{
+    margin-bottom: 10px;
+    color: #bbb;
+}
+
+.showcase{
+    display: flex;
+    margin: 0 2rem;
+    height: 80%;
+}
+
+.showcase .product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    max-width: 300px;
+    margin: 0 10px;
+    text-align: center;
 }
 
 .showcase img{
-    height: 50px;
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.showcase h4{
+    color: var(--green);
+    margin: 10px;
+}
+
+.showcase p{
+    color: var(--dark);
+}
+
+.showcase a{
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: var(--red);
+    color: var(--light);
+    text-decoration: none;
 }
