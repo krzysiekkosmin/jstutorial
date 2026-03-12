@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <label>Department</label>
+            <div class="dept">
+                <input type="radio" name="department" value="CSE" onclick="updateCourses()" required> CSE
+                <input type="radio" name="department" value="IT" onclick="updateCourses()"> IT
+                <input type="radio" name="department" value="ECE" onclick="updateCourses()"> ECE
+                <input type="radio" name="department" value="Civil" onclick="updateCourses()"> Civil
+                <input type="radio" name="department" value="Mech" onclick="updateCourses()"> Mech
+                <input type="radio" name="department" value="Business" onclick="updateCourses()"> Business
+            </div>
+    
+
+            <label>Course</label>
+            <select name="course" id="course" required>
+                <option value="">Select Current Course</option>
+            </select>
+
+
+            <script>
+        function updateCourses() {
+            let dept = document.querySelector('input[name="department"]:checked');
+            let courseSelect = document.getElementById("course");
+
+            // clear existing options
+            courseSelect.innerHTML = "<option value=''>Select Current Course</option>";
+
+            if (!dept) return;
+
+            let courses = [];
+
+            if (dept.value === "IT") {
+                courses = ["Java", "Python", "React"];
+            } else if (dept.value === "Business") {
+                courses = ["Business101", "Critical Thinking", "Entrepreneurship"];
+            } else if (dept.value === "CSE") {
+                courses = ["C Programming", "Data Structures", "Algorithms"];
+            } else if (dept.value === "ECE") {
+                courses = ["Digital Electronics", "VLSI Design", "Embedded Systems"];
+            } else if (dept.value === "Civil") {
+                courses = ["Structural Engineering", "Surveying", "Construction"];
+            } else if (dept.value === "Mech") {
+                courses = ["Thermodynamics", "Automobile Engg", "Manufacturing"];
+            }
+
+            courses.forEach(course => {
+                let opt = document.createElement("option");
+                opt.value = course;
+                opt.text = course;
+                courseSelect.appendChild(opt);
+            });
+        }
+    </script>
+</body>
+</html>
