@@ -38,6 +38,10 @@
     overflow: hidden;
  }
 
+ .navigation.active{/* style dla akcji js */
+   width: 80px;
+ }
+
  .navigation ul{
     position: absolute;
     top: 0;
@@ -128,4 +132,156 @@
    border-radius: 50%;/* zaokrąglenie kwadratu do kuli */
    box-shadow: 35px -35px 0 10px var(--white);
    pointer-events: none;
+ }
+
+ /* ================ Main =========================== */
+ .main{
+   position: absolute;
+   width: calc(100% - 300px);
+   left: 300px;
+   min-height: 100vh;
+   background: var(--white);
+   transition: 0.5s;
+ }
+
+ .main.active{/* style dla akcji js */
+   width: calc(100% - 80px);
+   left: 80px;
+ }
+
+ .topbar{
+   width: 100%;
+   height: 60px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 10px;
+ }
+
+ .toggle{
+   position: relative;
+   width: 60px;
+   height: 60px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 2.5rem;
+   cursor: pointer;
+ }
+
+ .search{
+   position: relative;
+   width: 400px;
+   margin: 0 10px;
+ }
+
+ .search label{
+   position: relative;
+   width: 100%;
+ }
+
+ .search label input{
+   width: 100%;
+   height: 40px;
+   border-radius: 40px;
+   padding: 5px 20px;
+   padding-left: 35px;
+   font-size: 18px;
+   outline: none;
+   border: 1px solid var(--black2);
+ }
+
+ .search label ion-icon{
+   position: absolute;
+   top: 0;
+   left: 10px;
+   font-size: 1.2rem;
+ }
+
+ .user{
+   position: relative;
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   overflow: hidden;
+   cursor: pointer;
+ }
+
+ .user img{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+ }
+
+ /* ============ Cards =============== */
+ .cardBox{/* ustawia karty jedna obok drugiej  */
+   position: relative;
+   width: 100%;
+   padding: 20px;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-gap: 30px;/* odstępy między kartami */
+ }
+
+ .cardBox .card{/* tworzy kwadraciki/karty */ 
+   position: relative;
+   background: var(--white);
+   padding: 30px;
+   border-radius: 20px;
+   display: flex;
+   justify-content: space-between;
+   cursor: pointer;
+   box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+ }
+
+ .cardBox .card .numbers{
+   position: relative;
+   font-weight: 500;
+   font-size: 2.5rem;
+   color: var(--blue);
+ }
+
+ .cardBox .card .cardName{
+   color: var(--black2);
+   font-size: 1.1rem;
+   margin-top: 5px;
+ }
+
+ .cardBox .card .iconBox{
+   font-size: 3.5rem;
+   color: var(--black2);
+ }
+
+ .cardBox .card:hover{
+   background: var(--blue);
+ }
+
+ .cardBox .card:hover .numbers,
+ .cardBox .card:hover .cardName,
+ .cardBox .card:hover .iconBox{
+   color: var(--white);
+ }
+
+ /* ================= Order Detail List ============================ */
+ .details{
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 30px;
+  margin-top: 10px;
+ }
+
+ .details .recentOrders{
+  position: relative;
+  display: grid;
+  min-height: 500px;
+  background: var(--white);
+  padding: 20px;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
  }
