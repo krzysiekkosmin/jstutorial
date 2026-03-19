@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*{
+    font-family: "Ubuntu", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+}
+
+.navigation{
+    position: fixed;
+    width: 350px;
+    height: 100%;
+    background: #262931;
+    border-left: 10px solid #262931;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+ .navigation.active{/* style dla akcji js */
+   width: 80px;/* szerokość po schowaniu */
+ }
+
+.navigation ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+ }
+
+ .navigation ul li:hover,
+ .navigation ul li.hovered{
+    background-color: transparent;
+ }
+
+  .navigation ul li:nth-child(1){/* pierwszy li */
+    margin-bottom: 40px;
+    pointer-events: none;
+ }
+
+ .navigation ul li:nth-child(1) .logo{
+    display: flex;
+    font-size: 15px;
+    text-align: start;
+ }
+
+ .navigation ul li:nth-child(1) .logo p{
+    position: relative;
+    display: block;
+    min-width: 20px;
+    font-size: 30px;
+    line-height: 60px;
+    font-family: 'Times New Roman', Times, serif;
+ }
+
+ .navigation ul li a{
+    position: relative;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: white;
+ }
+
+ .navigation ul li a:hover{
+    background: black;
+ }
+
+ .navigation ul li a .icon{   /* rozmieszczenie span class icon */
+   position: relative;
+   display: block;
+   min-width: 60px;
+   height: 60px;
+   line-height: 75px;
+   text-align: center;
+ }
+
+ .navigation ul li a .icon ion-icon{      /* wielkość ikon */
+   font-size: 1.75rem;
+ }
+
+ .navigation ul li a .title{
+   position: relative;
+   display: block;
+   padding: 0 10px;/* odległość linku od ikony */
+   height: 60px;
+   line-height: 60px;
+   text-align: start;
+   white-space: nowrap;
+ }
+
+ /* main */
+ .main{
+   position: absolute;
+   width: calc(100% - 300px);
+   left: 350px;/* przesuwanie main w prawo po kliknięciu w kreski */
+   min-height: 100vh;
+   background: blue;
+   transition: 0.5s;
+ }
+
+ .main.active{/* style dla akcji js */
+   width: calc(100% - 80px);
+   left: 90px;
+ }
+
+ .topbar{
+    position: absolute;
+    width: 80%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    background: red;
+ }
+
+ 
+ .toggle{
+   position: relative;
+   width: 60px;
+   height: 60px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 2.5rem;
+   cursor: pointer;
+ }
+
+.login-logout{
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 1400px;
+    position: relative;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+ }
+
+ .login-logout ion-icon{
+    position: relative;
+    font-size: 1.75rem;
+ }
+
+.login-logout .login-btn{
+    position: relative;
+
+    width: 60px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+ }
+
+ /* auth_process*/
+ .auth-modal{
+    position: fixed;
+    width: 420px;
+    height: 440px;
+    background: rgba(0, 0, 0, .3);
+    border: 2px solid rgba(255,255,255, .3);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .3);
+    backdrop-filter: blur(20px);
+    color: #fff;
+    inset: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transform: scale(0);
+    transition: height .2s ease, transform .5s ease;
+}
+
+.auth-modal.show{
+    transform: scale(1);
+}
+
+.auth-modal.slide{
+    height: 520px;
+}
+
+.auth-modal .form-box{
+    width: 100%;
+    padding: 40px;
+}
+
+.auth-modal .form-box.login,
+.auth-modal.slide .form-box.register{
+    transform: translateX(0);
+    transition: transform .18s ease;
+}
+
+.auth-modal.slide .form-box.login{
+    transform: translateX(-400px);
+    transition: none;
+}
+
+.auth-modal .form-box.register{
+    position: absolute;
+    transform: translateX(400px);
+}
+
+.form-box h2{
+    font-size: 35px;
+    text-align: center;
+}
+
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .3);
+    outline: none;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder{
+    color: #fff;
+}
+
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.btn{
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border-radius: 40px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    font-size: 16px;
+    color: #222;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.form-box p{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.form-box p a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.form-box p a:hover{
+    text-decoration: underline;
+}
+
+.auth-modal .close-btn-modal{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: #fff;
+    border: none;
+    border-bottom-left-radius: 20px;
+    font-size: 35px;
+    color: #222;
+    cursor: pointer;
+    z-index: 1;
+}
