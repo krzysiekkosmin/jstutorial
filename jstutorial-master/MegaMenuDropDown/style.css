@@ -175,3 +175,20 @@ a{
     opacity: 1;
     transform: rotate(90deg);
 }
+
+/* Dropdown */
+.dropdown__button{
+    cursor: pointer;
+}
+
+.dropdown__arrow{
+    font-size: 1.5rem;
+    font-weight: initial;
+    transition: transform .4s;
+}
+
+.dropdown__content,
+.dropdown__group,
+.dropdown__list{
+    display: grid;
+}
