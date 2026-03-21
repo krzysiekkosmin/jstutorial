@@ -12,9 +12,37 @@ const showMenu = (toggleId, navId) =>{
     })
 }
 
-
 showMenu('nav-toggle', 'nav-menu')
-/* ============ SHOW DROPDOWN MENU ====== */
 
+/* ============ SHOW DROPDOWN MENU ====== */
+const dropdownItems = document.querySelectorAll('.dropdown__item')
+
+// 1. Select each dropdown item
+dropdownItems.forEach((item) => {
+    const dropdownButton = item.querySelector('.dropdown__button')
+
+    // 2. Select each button click
+    dropdownButton.addEventListener('click', () => {
+        // 5. Call the toggleItem function
+        toggleItem(item)
+    })
+})
+
+// 3. Create a function to display the dropdown
+const toggleItem = (item) =>{
+    // 3.1. Select each dropdown content
+    const dropdownContainer = item.querySelector('.dropdown__container')
+
+    // 6. If the same item contains the show-dropdown class, remove
+    if(item.classList.contains('show-dropdown')){
+        dropdownContainer.removeAttribute('style')
+        item.classList.remove('show-dropdown')
+    }else{
+        // 4. Add the maximum height to the dropdown content and add the show-dropdown class
+        dropdownContainer.style.height = dropdownContainer.scrollHeight + 'px'
+        item.classList.add('show-dropdown')
+    }
+    
+}
 
 /* =========  DELETE DROPDOWN STYLES ============ */
