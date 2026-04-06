@@ -23,13 +23,14 @@ function isActiveForm($formName, $activeForm) {
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Formularz logowania dla Urzytkownika i Administratora</title>
 </head>
 <body>
     <div class="continer">
+        
         <div class="form-box <?= isActiveForm('login', $activeForm); ?>" id="login-form">
             <form action="login_register.php" method="post">
                 <h2>Login</h2>
@@ -37,26 +38,27 @@ function isActiveForm($formName, $activeForm) {
                 <input type="email" name="email" placeholder="Email" required>
                 <input type="password" name="password" placeholder="Password" required>
                 <button type="submit" name="login">Login</button>
-                <p>Don't have an account? <a href="#" onclick="showForm('register-form')">Register</a></p>
+                <!-- <p>Don't have an account? <a href="#" onclick="showForm('register-form')">Register</a></p> -->
             </form>
         </div>
 
-        <div class="form-box <?= isActiveForm('register', $activeForm); ?>" id="register-form">
+        <!-- <div class="form-box <?= isActiveForm('register', $activeForm); ?>" id="register-form">
             <form action="login_register.php" method="post">
                 <h2>Register</h2>
                 <?= showError($errors['register']); ?>
                 <input type="text" name="name" placeholder="Name" required>
                 <input type="email" name="email" placeholder="Email" required>
+                <input type="tel" name="phone" placeholder="+48123456789" required>
                 <input type="password" name="password" placeholder="Password" required>
-                <select name="role" id="" required>
+                 <select name="role" id="" required>
                     <option value="">-- Select Role --</option>
                     <option value="user">User</option>
                     <option value="admin">Admin</option>
                 </select>
                 <button type="submit" name="register">Register</button>
                 <p>Already have an account? <a href="#" onclick="showForm('login-form')">Login</a></p>
-            </form>
-        </div>
+            </form> 
+        </div>  -->
     </div>
     
     <script src="script.js"></script>
